@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024bb69f3374d4e4d9bcf51ab01bf4cf, type: 3}
+  m_Name: InventoryItems
+  m_EditorClassIdentifier: 
+  _items:
+  - _id: Coin
+    _setMaxValue: 0
+    _maxValue: 0
+    _tags: 00000000
+    _icon: {fileID: -2322180950842035098, guid: 50cb68242d1491d4b8f3416737eeceea,
+      type: 3}
+  - _id: Sword
+    _setMaxValue: 0
+    _maxValue: 5
+    _tags: 000000000100000002000000
+    _icon: {fileID: 21300000, guid: 189e515139b007b46a6ad359f074aa8a, type: 3}
+  - _id: Key
+    _setMaxValue: 0
+    _maxValue: 0
+    _tags: 0100000001000000
+    _icon: {fileID: 21300000, guid: a8e784bf6e2b9854c8eac95e857bc3d4, type: 3}
+  - _id: Heal Potion
+    _setMaxValue: 0
+    _maxValue: 5
+    _tags: 0000000001000000
+    _icon: {fileID: 3714227102187029162, guid: 100d15d55cd12814d8207c16fbd07b2b, type: 3}
+  - _id: Pearl
+    _setMaxValue: 0
+    _maxValue: 5
+    _tags: 000000000100000002000000
+    _icon: {fileID: 21300000, guid: b35705cbeacfa8a4cb479d1daad2afa9, type: 3}
+  - _id: Small Heal Potion
+    _setMaxValue: 0
+    _maxValue: 5
+    _tags: 0000000001000000
+    _icon: {fileID: 1185527514606905908, guid: 100d15d55cd12814d8207c16fbd07b2b, type: 3}
