@@ -22,5 +22,7 @@ public class RequireItemComponent : MonoBehaviour
         }
         else
             _onFail?.Invoke();
+
+        Debug.Log("Fail");
     }
 }

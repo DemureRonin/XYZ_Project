@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 889bf7b544d5da04ea23727c71d91925, type: 3}
-  m_Name: GameSettings
+  m_Script: {fileID: 11500000, guid: 6ef304271e5944248bf3846e2ee34b3c, type: 3}
+  m_Name: Crabby_Received
   m_EditorClassIdentifier: 
-  _music:
-    _value: 0.02
-  _sfx:
-    _value: 0.99
+  _data:
+    _sentences:
+    - And now the miracle!
+    - I disappear!

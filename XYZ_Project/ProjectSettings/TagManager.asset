@@ -15,6 +15,7 @@ TagManager:
   - Sfx
   - Small Heal Potion
   - Heal Potion
+  - SfxAudioSource
   layers:
   - Default
   - TransparentFX
