@@ -33,6 +33,7 @@ using UnityEngine.UI;
             _text.text = string.Empty;
             
             _container.SetActive(true);
+            _sfxSource.PlayOneShot(_open);
         }
 
     }
