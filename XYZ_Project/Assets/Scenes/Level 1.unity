@@ -14847,6 +14847,12 @@ PrefabInstance:
       objectReference: {fileID: 319019152}
     - target: {fileID: 3894377585956643153, guid: 2e0e1256fa286aa4dbaf0a301e2ac059,
         type: 3}
+      propertyPath: _playerDef
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b82d14812d6a3e41b340b61ba764f62,
+        type: 2}
+    - target: {fileID: 3894377585956643153, guid: 2e0e1256fa286aa4dbaf0a301e2ac059,
+        type: 3}
       propertyPath: _potions.Array.size
       value: 2
       objectReference: {fileID: 0}

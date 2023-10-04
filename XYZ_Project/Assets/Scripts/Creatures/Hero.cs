@@ -8,7 +8,6 @@ namespace Scripts
 {
     public class Hero : Creature
     {
-        //Добавить геймобджект, взять у него компонент и прочекать дефинишон с тегом, сделать форыч, и заюзать точто совпадает
         [SerializeField] private float _timeToSpawnParticle;
         [SerializeField] private ParticleSystem _hitParticles;
         [SerializeField] private AnimatorController _armed;
@@ -17,6 +16,7 @@ namespace Scripts
 
         [SerializeField] private CheckCircleOverlap _interactionCheck;
         [SerializeField] private SpawnComponent _throwSpawner;
+        [SerializeField] private PlayerDef _playerDef;
 
 
         private bool _allowDoubleJump;
@@ -168,8 +168,6 @@ namespace Scripts
         }
         public void OnDoThrow()
         {
-            var throwableCount = _session.Data.Inventory.Count(SelectedItemId);
-            var possibleCount = SelectedItemId == SwordId ? throwableCount - 1 : throwableCount;
             Particles.Spawn("SwordThrow");
             Sounds.Play("Range");
 
@@ -185,10 +183,10 @@ namespace Scripts
 
 
                _animator.SetTrigger(ThrowKey);
-               _session.Data.Inventory.RemoveItem(throwableId, 1); ;
-           }
+               _session.Data.Inventory.RemoveItem(throwableId, 1); 
+          }
 
-      }
+        }
        
 
         public void HextItem()
@@ -196,13 +194,14 @@ namespace Scripts
             _session.QuickInventory.SetNextItem();
         }
 
-        public void UseItem()
+        public void UsePotion()
         {
             var def = DefsFacade.I.Items.Get(SelectedItemId);
             foreach (var potion in _potions)
             {
-                if (def.HasTag(ItemTag.Usable) && potion.tag == def.Id)
+                if (def.HasTag(ItemTag.Usable) && potion.tag == def.Id && _session.Data.Hp.Value < _playerDef.MaxHealth)
                 {
+                    _session.Data.Inventory.RemoveItem(def.Id, 1);
                     _healthPotion = potion.GetComponent<DamageComponent>();
                     Heal(); break;
                 }
@@ -211,7 +210,9 @@ namespace Scripts
         public void Heal()
         {
             _healthComponent?.ApplyDamage(_healthPotion.DamageDelta);
-            Particles.Spawn("UseItem");
+            if (_session.Data.Hp.Value > _playerDef.MaxHealth)
+                _session.Data.Hp.Value = _playerDef.MaxHealth;
+            Particles.Spawn("UsePotion");
         }
     }
 }
