@@ -2,6 +2,7 @@
 using System.Collections;
 using Model.Data;
 using PixelCrew.Utils;
+using Scripts.Model.Definitions.Localisation;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -50,6 +51,7 @@ using UnityEngine.UI;
         private IEnumerator TypeDialogueText()
         {
             _text.text = string.Empty;
+
             var sentence = _data.Sentences[_currentSentence];
             foreach (var letter in sentence)
             {

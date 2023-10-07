@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad029d2e4a61fe4458221547c8697711, type: 3}
+  m_Name: es
+  m_EditorClassIdentifier: 
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQEkxaIQ5NKXkncgTL4wZAXnuQbpghKcshrB-g6RorO8c8ikYjH5dq2jOMP75ehsBWn3Ku_E7VlzJY-/pub?gid=1076675898&single=true&output=tsv
+  _localeItems:
+  - key: menu_title
+    value: "men\xFA principal\r"
+  - key: button_start
+    value: "jugar\r"
+  - key: button_options
+    value: "ajustes\r"
+  - key: button_exit
+    value: "salida\r"
+  - key: selected_language
+    value: "idioma\r"
+  - key: button_apply
+    value: "aplicar\r"
+  - key: pause_title
+    value: "pausa\r"
+  - key: button_resume
+    value: "continuar\r"
+  - key: button_restart
+    value: "reanudar\r"
+  - key: option_sounds
+    value: "sonidos\r"
+  - key: options_music
+    value: "m\xFAsica\r"
+  - key: get_request_crab
+    value: "Tr\xE1eme 10 monedas...\r"
+  - key: miracle_request_crab
+    value: "Y te mostrar\xE9 un milagro...\r"
+  - key: miracle_crab
+    value: "\xA1Y aqu\xED viene el milagro!\r"
+  - key: disappear_crab
+    value: "\xA1Milagro desaparecer!\r"
+  - key: button_continue
+    value: "\u0421ontinuar..."

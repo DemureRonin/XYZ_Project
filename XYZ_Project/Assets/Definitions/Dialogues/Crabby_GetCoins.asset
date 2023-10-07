@@ -16,3 +16,6 @@ MonoBehaviour:
     _sentences:
     - Get me 10 coins...
     - And I will show you a miracle.....
+    _localeId:
+    - get_request_crab
+    - miracle_request_crab

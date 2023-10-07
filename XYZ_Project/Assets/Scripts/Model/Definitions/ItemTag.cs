@@ -6,5 +6,6 @@ public enum ItemTag
 {
    Stackable, 
    Usable, 
-   Throwable
+   Throwable,
+   Addable
 }

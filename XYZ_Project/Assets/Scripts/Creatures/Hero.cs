@@ -1,4 +1,5 @@
 ﻿using System;
+using Cinemachine;
 using Scripts.Components;
 using Scripts.Model;
 using UnityEditor.Animations;
@@ -26,6 +27,8 @@ namespace Scripts
         private GameSession _session;
         private HealthComponent _healthComponent;
         private DamageComponent _healthPotion;
+        
+        private CinemachineVirtualCamera _vCamera;
 
 
         private const string SwordId = "Sword";
@@ -69,6 +72,13 @@ namespace Scripts
             _session.Data.Inventory.OnChanged += OnInventoryChanged;
             health.SetHealth(_session.Data.Hp.Value);
             UpdateHeroWeapon();
+            
+            _vCamera = FindObjectOfType<CinemachineVirtualCamera>();
+            SetCamera();
+        }
+        public void SetCamera()
+        {
+            _vCamera.Follow = FindObjectOfType<Hero>().transform;
         }
         private void OnInventoryChanged(string id, int value)
         {

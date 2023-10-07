@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad029d2e4a61fe4458221547c8697711, type: 3}
+  m_Name: en
+  m_EditorClassIdentifier: 
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQEkxaIQ5NKXkncgTL4wZAXnuQbpghKcshrB-g6RorO8c8ikYjH5dq2jOMP75ehsBWn3Ku_E7VlzJY-/pub?gid=28187105&single=true&output=tsv
+  _localeItems:
+  - key: menu_title
+    value: "main menu\r"
+  - key: button_start
+    value: "play\r"
+  - key: button_options
+    value: "options\r"
+  - key: button_exit
+    value: "exit\r"
+  - key: selected_language
+    value: "choose language\r"
+  - key: button_apply
+    value: "apply\r"
+  - key: pause_title
+    value: "pause\r"
+  - key: button_resume
+    value: "resume\r"
+  - key: button_restart
+    value: "restart level\r"
+  - key: option_sounds
+    value: "sounds\r"
+  - key: options_music
+    value: "music\r"
+  - key: get_request_crab
+    value: "Get me 10 coins\u2026\r\r"
+  - key: miracle_request_crab
+    value: "And I will show you a miracle.....\r"
+  - key: miracle_crab
+    value: "And now the miracle!\r"
+  - key: disappear_crab
+    value: "I disappear!\r"
+  - key: button_continue
+    value: Continue...
