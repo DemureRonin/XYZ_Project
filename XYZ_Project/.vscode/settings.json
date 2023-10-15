@@ -1,6 +1,0 @@
-{
-    "dotnet.defaultSolution": "XYZ_Project.sln",
-    "files.exclude": {
-        "**/*.meta": true
-    }
-}

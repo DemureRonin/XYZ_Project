@@ -16,7 +16,7 @@ public class PlaySoundsComponent : MonoBehaviour
             if (audioData.Id != id) continue;
             {
                 if (_audioSource == null)
-                    _audioSource = GameObject.FindWithTag("Sfx").GetComponent<AudioSource>();
+                    _audioSource = GameObject.FindWithTag("SfxAudioSource").GetComponent<AudioSource>();
                 _source.PlayOneShot(audioData.Clip);
                 break;
             }

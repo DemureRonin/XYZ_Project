@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using PixelCrew.Utils.Disposables;
 using Scripts.Model;
+using UI.HUD;
 using UnityEngine;
 
 public class QuickInventoryController : MonoBehaviour
 {
     [SerializeField] private Transform _container;
     [SerializeField] private InventoryItemWidget _prefab;
+    
+    [SerializeField] private CoinHud _coinHud;
 
     private readonly CompositeDisposable _trash = new CompositeDisposable();
     private GameSession _session;
@@ -24,6 +27,7 @@ public class QuickInventoryController : MonoBehaviour
 
     private void Rebuild()
     {
+        
         var inventory = _session.QuickInventory.Inventory;
         for (var i = _createdItems.Count; i < inventory.Length; i++)
         {
@@ -39,5 +43,6 @@ public class QuickInventoryController : MonoBehaviour
         {
             _createdItems[i].gameObject.SetActive(false);
         }
+        _coinHud.OnValueChanged();
     }
 }

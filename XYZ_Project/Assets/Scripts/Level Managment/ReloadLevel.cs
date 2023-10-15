@@ -7,34 +7,14 @@ namespace Scripts.Components
 
     public class ReloadLevel : MonoBehaviour
     {
-        
-        
-        public void Start()
-        {
-           
-        }
         public void Reload()
         {
-
-            
             var session = FindObjectOfType<GameSession>();
-            Destroy(session.gameObject);
-
-
+            session.LoadLastSave();
             
-
             var scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
-            
-
-
-            
-
-
-
         }
-        
-       
     }
 }
 

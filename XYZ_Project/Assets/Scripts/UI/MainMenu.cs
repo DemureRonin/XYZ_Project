@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Utils;
 
 public class MainMenu : AnimatedWindow
 {
@@ -15,7 +16,12 @@ public class MainMenu : AnimatedWindow
     {
         _closeAction = () => { SceneManager.LoadScene("Level 1"); };
 
+     
         Close();
+    }
+    public void OnLanguages()
+    {
+        WindowUtils.CreateWindow("UI/LocalizationWindow");
     }
     public virtual void OnExit()
     {

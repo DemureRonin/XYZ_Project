@@ -35,7 +35,7 @@ namespace Scripts
         {
             if (context.canceled)
             {
-                _hero.UseItem();
+                _hero.UsePotion();
                 _hero.Throw();
             }
         }

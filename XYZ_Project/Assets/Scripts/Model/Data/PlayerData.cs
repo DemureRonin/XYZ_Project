@@ -1,4 +1,5 @@
 ﻿using System;
+using Model.Data;
 using UnityEngine;
 namespace Scripts.Model
 {
@@ -8,7 +9,7 @@ namespace Scripts.Model
         [SerializeField] private InventoryData _inventory;
 
         public IntProperties Hp = new IntProperties();
-
+        public PerksData Perks = new PerksData();
         public InventoryData Inventory => _inventory;
 
         public PlayerData Clone()

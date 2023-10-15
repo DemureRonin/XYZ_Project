@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab7c371b12bbac64bb4b2e1835de69fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: Heal Potion
+  _id: Small Heal Potion
   _count: 1
 --- !u!114 &1509338994999035681
 MonoBehaviour:
